@@ -1,8 +1,8 @@
 {
   "name": "api",
-  "version": "1.0.0",
-  "description": "final api [Dein Name] uek-295",
-  "author": "coach|https://wiki.ict-uek.ch/|coach@ict-uek.ch",
+  "version": "1.0.6",
+  "description": "REST api-Daniel ÜK-295 Klasse AE-K2-23",
+  "author": "Daniel | https://www.swisscom.ch/ | daniel.muerner@swisscom.com",
   "license": "MIT|https://opensource.org/license/mit",
   "private": true,
   "scripts": {
