@@ -1,9 +1,16 @@
-import { Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
-@Entity({ name: 'test' })
-export class TestEntity {
-  @PrimaryGeneratedColumn({
-    primaryKeyConstraintName: 'pk-test',
-  })
+@Entity()
+export class ToDo {
+  @PrimaryGeneratedColumn()
   id: number;
+
+  @Column({ type: 'varchar', length: 255 })
+  title: string;
+
+  @Column({ type: 'text' })
+  description: string;
+
+  @Column({ type: 'boolean', default: () => 'False' })
+  closed: boolean;
 }

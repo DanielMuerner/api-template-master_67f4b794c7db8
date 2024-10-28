@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@nestjs/swagger": "^7.4.2"
+    "@nestjs/swagger": "^7.4.2",
+    "typeorm": "^0.3.20"
   }
 }
