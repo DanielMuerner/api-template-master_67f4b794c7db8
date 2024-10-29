@@ -9,6 +9,7 @@ import { UserInfoDto } from '../../sample/generic.dtos/userDtoAndEntity';
 
 describe('TodoController', () => {
   let controller: TodoController;
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   let userService: UserService;
 
   const mockTodoService = {

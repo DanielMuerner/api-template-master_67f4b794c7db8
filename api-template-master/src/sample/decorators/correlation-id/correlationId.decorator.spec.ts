@@ -2,7 +2,7 @@ import { CorrId } from './correlation-id.decorator';
 import { ROUTE_ARGS_METADATA } from '@nestjs/common/constants';
 import { Constants } from '../../constants/constants';
 
-// eslint-disable-next-line @typescript-eslint/ban-types
+// eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
 function getParamDecoratorFactory(decorator: Function) {
   class Test {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
