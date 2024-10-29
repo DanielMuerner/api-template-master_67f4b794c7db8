@@ -1,10 +1,10 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { TodoService } from './todo.service';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { Todo } from './todo.entity';
+import { Todo } from '../dto/todo.entity';
 import { BadRequestException, NotFoundException } from '@nestjs/common';
-import { CreateTodoDto } from './create-todo.dto';
-import { UpdateTodoDto } from './update-todo.dto';
+import { CreateTodoDto } from '../dto/create-todo.dto';
+import { UpdateTodoDto } from '../dto/update-todo.dto';
 
 describe('TodoService', () => {
   let service: TodoService;

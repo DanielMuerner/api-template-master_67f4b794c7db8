@@ -1,9 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { TodoController } from './todo.controller';
-import { TodoService } from './todo.service';
+import { TodoService } from '../todo.service/todo.service';
 import { UserService } from '../../sample/modules/auth/user.service/user.service';
-import { CreateTodoDto } from './create-todo.dto';
-import { UpdateTodoDto } from './update-todo.dto';
+import { CreateTodoDto } from '../dto/create-todo.dto';
+import { UpdateTodoDto } from '../dto/update-todo.dto';
 import { ForbiddenException, NotFoundException } from '@nestjs/common';
 import { UserInfoDto } from '../../sample/generic.dtos/userDtoAndEntity';
 

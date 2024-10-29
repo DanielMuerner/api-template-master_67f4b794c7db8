@@ -1,7 +1,7 @@
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './sample/modules/auth/user.service/user.module';
-import { TodoModule } from './todo/dto/Todo-Module';
+import { TodoModule } from './todo/todo.module';
 import { LoggerMiddleware } from './sample/midleware/logger.middleware';
 import { AuthModule } from './sample/modules/auth/auth.module';
 import { ResetModule } from './sample/modules/reset/reset.module';

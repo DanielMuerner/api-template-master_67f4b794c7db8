@@ -1,10 +1,10 @@
 import { BadRequestException, HttpException, Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Todo } from './todo.entity';
-import { CreateTodoDto } from './create-todo.dto';
-import { UpdateTodoDto } from './update-todo.dto';
-import { ReturnTodoDto } from './return-todo.dto';
+import { Todo } from '../dto/todo.entity';
+import { CreateTodoDto } from '../dto/create-todo.dto';
+import { UpdateTodoDto } from '../dto/update-todo.dto';
+import { ReturnTodoDto } from '../dto/return-todo.dto';
 
 @Injectable()
 export class TodoService {

@@ -12,10 +12,10 @@ import {
   NotFoundException,
   ForbiddenException,
 } from '@nestjs/common';
-import { TodoService } from './todo.service';
-import { CreateTodoDto } from './create-todo.dto';
-import { UpdateTodoDto } from './update-todo.dto';
-import { ReturnTodoDto } from './return-todo.dto';
+import { TodoService } from '../todo.service/todo.service';
+import { CreateTodoDto } from '../dto/create-todo.dto';
+import { UpdateTodoDto } from '../dto/update-todo.dto';
+import { ReturnTodoDto } from '../dto/return-todo.dto';
 import { UserService } from '../../sample/modules/auth/user.service/user.service';
 import { CurrentUser } from '../../sample/decorators/current-user/current-user.decorator';
 import { UserInfoDto } from '../../sample/generic.dtos/userDtoAndEntity';
