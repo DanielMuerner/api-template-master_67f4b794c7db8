@@ -1,16 +1,17 @@
+// todo.entity.ts
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
-@Entity()
+@Entity('todo')
 export class Todo {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column({ type: 'varchar', length: 255 })
+  @Column()
   title: string;
 
-  @Column({ type: 'text' })
+  @Column()
   description: string;
 
-  @Column({ type: 'boolean', default: false })
+  @Column({ default: false })
   closed: boolean;
 }

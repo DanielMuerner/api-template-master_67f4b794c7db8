@@ -5,10 +5,10 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
 import { AppModule } from '../src/app.module';
 // achtung. dieses DTO gibt es noch nicht! das musst du selber anlegen
-import { ReturnTodoDto } from '../src/todo/ReturnDTO';
+import { ReturnTodoDto } from '../src/todo/dto/return-todo.dto';
 // dieses DTO gibt es :-) wenn du den Befehl nest g resource todo ausgeführt hast
-import { CreateTodoDto } from '../src/todo/CreateDTO';
-import { UpdateTodoDto } from '../src/todo/UpdateDTO';
+import { CreateTodoDto } from '../src/todo/dto/create-todo.dto';
+import { UpdateTodoDto } from '../src/todo/dto/update-todo.dto';
 import { TestHttpClient } from './testing-tools/test-http-client';
 
 describe('Todo (e2e)', () => {
