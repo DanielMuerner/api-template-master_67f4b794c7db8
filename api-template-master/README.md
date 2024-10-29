@@ -45,7 +45,7 @@ Ersteller: Daniel Mürner
 ## Fazit
 Die aufgabe war recht schwierig, es gab viele Probleme, welche aber gelöst werden konnten, für mich ging es sehr gut auf, mit der Zeitplanung, zumindest bis am schluss, nicht mit den einzelnen teilen.
 Aber jetzt funktioniert alles:
-![img.png](img.png)//lint
-![img_1.png](img_1.png)//test cov
-![img_2.png](img_2.png)//test-todo:e2e
-![img_3.png](img_3.png)//test-template:e2e
+![img.png](img.png)
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
