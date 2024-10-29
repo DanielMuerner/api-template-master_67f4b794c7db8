@@ -19,6 +19,7 @@ import { Security } from '../../../security';
   ],
   controllers: [AuthController, ProfileController],
   providers: [AuthService, UserService, JwtStrategy],
+  exports: [UserService],
 })
 export class AuthModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {

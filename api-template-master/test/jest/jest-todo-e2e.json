@@ -1,9 +1,21 @@
 {
   "moduleFileExtensions": ["js", "json", "ts"],
-  "rootDir": "..",
+  "rootDir": "../../",
   "testEnvironment": "node",
-  "testRegex": "todo.e2e-spec.ts$",
+  "testRegex": ".spec.ts$",
   "transform": {
     "^.+\\.(t|j)s$": "ts-jest"
-  }
+  },
+  "collectCoverageFrom": [
+    "src/todo/**/*.ts",
+    "!src/todo/**/*.spec.ts",
+    "!src/todo/**/*.module.ts",
+    "!src/todo/**/index.ts"
+  ],
+  "coverageDirectory": "./coverage/todo",
+  "moduleNameMapper": {
+    "^@/(.*)$": "<rootDir>/src/$1"
+  },
+  "roots": ["<rootDir>/src/"],
+  "modulePaths": ["<rootDir>"]
 }

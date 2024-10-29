@@ -36,7 +36,7 @@ async function bootstrap() {
     .setContact(authorName || 'Author', authorWebsite || '', authorEmail || '')
     .setLicense(license || 'MIT', `${serverProtocol}://${accessServer}:${port}/license`)
     .addServer(`${serverProtocol}://${accessServer}:${port}`)
-    .addBearerAuth()  // Bearer-Authentifizierung hinzufügen
+    .addBearerAuth() // Bearer-Authentifizierung hinzufügen
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
